@@ -1,13 +1,13 @@
 package com.java.employeeservice.service.impl;
 
+import com.java.employeeservice.entity.Employee;
+import com.java.employeeservice.service.APIClient;
+import com.java.employeeservice.service.EmployeeService;
+import lombok.AllArgsConstructor;
 import com.java.employeeservice.dto.APIResponseDto;
 import com.java.employeeservice.dto.DepartmentDto;
 import com.java.employeeservice.dto.EmployeeDto;
-import com.java.employeeservice.entity.Employee;
 import com.java.employeeservice.repository.EmployeeRepository;
-import com.java.employeeservice.service.APIClient;
-import lombok.AllArgsConstructor;
-import com.java.employeeservice.service.EmployeeService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;

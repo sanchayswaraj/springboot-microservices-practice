@@ -1,7 +1,7 @@
 package com.java.departmentservice.service.impl;
 
-import com.java.departmentservice.dto.DepartmentDto;
 import lombok.AllArgsConstructor;
+import com.java.departmentservice.dto.DepartmentDto;
 import com.java.departmentservice.entity.Department;
 import com.java.departmentservice.repository.DepartmentRepository;
 import com.java.departmentservice.service.DepartmentService;

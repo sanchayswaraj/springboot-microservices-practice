@@ -1,8 +1,8 @@
 package com.java.departmentservice.controller;
 
 import com.java.departmentservice.dto.DepartmentDto;
-import com.java.departmentservice.service.DepartmentService;
 import lombok.AllArgsConstructor;
+import com.java.departmentservice.service.DepartmentService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
