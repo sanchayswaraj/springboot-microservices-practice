@@ -28,4 +28,13 @@ public class EmployeeController {
         APIResponseDto apiResponseDto = employeeService.getEmployeeById(employeeId);
         return new ResponseEntity<>(apiResponseDto, HttpStatus.OK);
     }
+
+
+    //Delete an Employee
+
+//    @DeleteMapping({id})
+//    public ResponseEntity<APIResponseDto> deleteEmployee(@PathVariable("id") Long employeeId){
+//        APIResponseDto apiResponseDto = employeeService.deleteEmployeeById(employeeId);
+//        return new ResponseEntity<>(apiResponseDto, HttpStatus.OK);
+//    }
 }
