@@ -1,0 +1,83 @@
+//Navigate to project folder
+cd C:\MyData\JetBrains-intellij\springboot-docker
+
+//Build the docker image
+docker build -t springboot-docker-practice .
+
+//display all the images in the machine
+docker images
+
+//By default the tag name is added as latest
+//We can add tags in docker image also
+docker build -t springboot-docker-practice:0.1.RELEASE .
+
+//display all the images in the machine
+docker images 
+
+//We are mapping container port with host machine port
+docker run -p 8080:8080 springboot-docker-practice
+
+//Hit the browser localhost:8080/docker
+
+//To check docker running containers
+docker ps
+
+//Run the Docker Image
+docker run -p 8081:8080 springboot-docker-practice
+
+Press Ctrl+c to terminate the terminal
+
+//How to run a docker container in detached mode(in background)
+docker run -p 8081:8080 -d springboot-docker-practice
+
+//To see docker logs of the container
+docker logs -f dockerID(first four digits)
+
+//-f command used to tail the logs
+//Ctrl+C
+
+//To check docker running containers
+docker ps
+//now the docker image will still be running because it is working in background
+
+// Stop docker container
+docker stop dockerId(first four digis)
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//Push Docker image to dockerHub
+
+
+//List All the docker image
+docker images
+
+//Login into DockerHub & Enter username and pwd
+docker login 			
+
+//Image name and repository name should be same
+docker tag springboot-docker-practice DockerID/springboot-docker-practice:0.1.RELEASE
+
+//Push docker image to dockerHub
+docker push DockerID/springboot-docker-practice:0.1.RELEASE
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+//Pull Docker Image from DockerHub
+docker pull dockerId/image-name:tagName
+
+
+//Pull mySQL docker image & mention the tag name also, if haven't mention by default it wi;; use latest tag
+docker pull mysql:latest
+
+
+//pull mariaDB docker image
+docker pull mariadb
+
+//How to run mysql docker image in docker container
+docker 
+
+
+
